@@ -1,24 +1,32 @@
 import Axios from 'axios'
-// import React, { Component, Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import BaseUrl from '../proxy'
 import React, { Fragment, useEffect, useState, useCallback } from 'react';
 
-function BookPage(props) {
+function PostPage(props) {
+
     let postId = props.match.params.id
 
     let [resData, setResData] = useState({
         title: { rendered: "loading" }, 
         content: { rendered: "loading" }
     });
-    // let book = {};
+
 
     const fetchData = useCallback(
         (postId) => {
             Axios.get(`${BaseUrl}/wp-json/wp/v2/posts/${postId}`)
-            .then(res => console.log(res.data))
+            .then(res => {
+                setResData({
+                    title: res.data.title,
+                    content: res.data.content
+                });
+                document.title = res.data.title.rendered;
+            })
             .catch(err => console.log(err));
         }, [])
+
+
 
     useEffect(() => {
         fetchData(postId)
@@ -27,16 +35,14 @@ function BookPage(props) {
 
         return (
             <Fragment>
-                <Link to='/'>Go Back</Link>
+                <Link to='/posts'>Go Back</Link>
                 <hr />
-                <h1>{ resData.title.rendered }</h1>
+                <h1 dangerouslySetInnerHTML={{ __html: resData.title.rendered }} />
                 <div dangerouslySetInnerHTML={{ __html: resData.content.rendered }} />
-
-                <div>Click me</div>
             </Fragment>
         )
 
 }
 
 
-export default BookPage
+export default PostPage

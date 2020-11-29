@@ -12,6 +12,8 @@ export class Posts extends Component {
 
     componentDidMount() {
 
+        document.title = window.location.hostname + ": Blog";
+
         Axios.get(`${BaseUrl}/wp-json/wp/v2/posts`)
         .then(res => this.setState({
             posts: res.data,
@@ -21,7 +23,6 @@ export class Posts extends Component {
     }
 
     render() {
-
         const { posts, isLoaded } = this.state;
         if(isLoaded) {
             return (
