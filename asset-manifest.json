@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.17ac5a42.chunk.css",
+    "main.js": "/static/js/main.7ee82f15.chunk.js",
+    "main.js.map": "/static/js/main.7ee82f15.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e327d292.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e327d292.js.map",
+    "static/js/2.dee89ef5.chunk.js": "/static/js/2.dee89ef5.chunk.js",
+    "static/js/2.dee89ef5.chunk.js.map": "/static/js/2.dee89ef5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.4e08aaddde033e8568766b4161e06f04.js": "/precache-manifest.4e08aaddde033e8568766b4161e06f04.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.17ac5a42.chunk.css.map": "/static/css/main.17ac5a42.chunk.css.map",
+    "static/js/2.dee89ef5.chunk.js.LICENSE.txt": "/static/js/2.dee89ef5.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/static/media/pattern-geometry-2.a46e500d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e327d292.js",
+    "static/js/2.dee89ef5.chunk.js",
+    "static/css/main.17ac5a42.chunk.css",
+    "static/js/main.7ee82f15.chunk.js"
+  ]
+}
