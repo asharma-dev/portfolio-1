@@ -35,7 +35,7 @@ function PostPage(props) {
 
         return (
             <Fragment>
-                <Link to='/posts'>Go Back</Link>
+                <Link to='/blog'>Go Back</Link>
                 <hr />
                 <h1 dangerouslySetInnerHTML={{ __html: resData.title.rendered }} />
                 <div dangerouslySetInnerHTML={{ __html: resData.content.rendered }} />

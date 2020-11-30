@@ -1,0 +1,22 @@
+@import './layout-home';
+
+
+@media screen and (min-width: 1000px) {
+  #root {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F7F7F2;
+  }
+
+  header {
+    flex-basis: 28%;
+  }
+
+  main {
+    flex-basis: 70%;
+    height: 1200px;
+  }
+}
+main {
+  min-height: 100vh;
+}

@@ -1,0 +1,218 @@
+/********* Author: Dalbir Singh  **************/
+/**********************************************/
+// css for header bar container
+// to place logo and navigation
+/**********************************************/
+
+
+.site-header-container {
+  background-color: $color__pale;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  transform: translateX(-100%);
+  transition: transform linear 0.2s;
+}
+
+
+.site-header.active {
+  .site-header-container {
+    visibility: visible;
+    transform: translateX(0);
+    transition: transform linear 0.2s;
+  }
+
+}
+
+  // site main navigation
+.site-main-nav {
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;      
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    li {
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      line-height: 2.5rem;
+      border-bottom: 1px solid $color__orange;
+
+      &:first-of-type {
+        border-top: 1px solid $color__orange;
+      }
+
+      a {
+        font-size: 1rem;
+        color: $color__black;
+        position: relative;
+        text-transform: uppercase;
+        border-radius: 0.25rem;
+        padding: 0.5rem;
+        text-decoration: none;
+
+        &::after {
+          content: "";
+          width: 100%;
+          position: absolute;
+          bottom: 20%;
+          left: 0;
+          right: 0;
+          border-bottom: 10px solid $color__orange_transparent;
+          transition: all 0.3s;
+        }
+      }
+
+
+      a:hover {
+        text-decoration: none;
+      }
+  
+      a:hover::after {
+        border-bottom-width: 5px;
+      }
+
+    }
+}
+
+
+
+// mobile menu
+button.main-nav-button {
+  border: 1px solid #67bc3944;
+  background-color: white;
+  box-shadow: 0px 0px 4px 0px silver;
+  height: 40px;
+  width: 46px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 99999999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: transparent;
+  }
+}
+
+
+.active {
+  .main-nav-button {
+    .menu-icon {
+      height: 0px;
+      transition: height 1ms linear;
+    }
+
+    .menu-icon:before {
+      transform: rotate(45deg);
+      margin-top: -2px;
+      transition: transform linear 0.5s;
+    }
+
+    .menu-icon:after {
+      transform: rotate(-45deg);
+      margin-top: -2px;
+      transition: transform linear 0.5s;
+    }
+  }
+}
+
+.menu-icon,
+.menu-icon:before,
+.menu-icon:after {
+  background-color: $color__orange;
+  width: 2rem;
+  height: 4px;
+  border-radius: 3px;
+}
+
+.menu-icon {
+  position: relative;
+  transition: height 0.5s linear 0.5s;
+}
+
+.menu-icon:before {
+  position: absolute;
+  content: "";
+  margin-top: -10px;
+  left: 0;
+  transform: rotate(0);
+  transition: transform linear 0.5s, margin-top 0.5s linear 0.25s;
+}
+
+.menu-icon:after {
+  position: absolute;
+  content: "";
+  margin-top: 10px;
+  left: 0;
+  transition: transform linear 0.5s, margin-top 0.5s linear 0.25s;
+}
+
+
+
+
+
+
+
+// media query after 1000px widht
+
+@media screen and (min-width: 1000px) {
+  .site-header-container {
+    position: fixed;
+    width: 25%;
+    max-width: 400px;
+    right: unset;
+    transform: translateX(0);
+  } 
+
+  button.main-nav-button {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+// user profile section
+
+.user-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .user-avatar {
+    max-width: 100px;
+    img {
+      border-radius: 50%;
+    }
+    
+  }
+}
+
+
+/*****************************************/
+// end of .site-header-container container
+/*****************************************/

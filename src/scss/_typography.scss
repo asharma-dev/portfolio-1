@@ -1,0 +1,56 @@
+body {
+    font-family: $font__body;
+    font-size: $font__size_base;
+    font-weight: 400;
+    line-height: $font__line-height-body;
+    color: $color__black;
+}
+
+h1 {
+    font-size: $font__size_xxl;
+}
+
+h2 {
+    font-size: $font__size_xl;
+}
+
+h3 {
+    font-size: $font__size_lg;
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: $font__size_xxxl;
+    }
+    
+    h2 {
+        font-size: $font__size_xxl;
+    }
+    
+    h3 {
+        font-size: $font__size_xl;
+    }
+}
+
+
+h1,
+h2,
+h3 {
+    font-family: $font__heading;
+    line-height: $font__line-height-heading;
+    color: $color__orange;
+}
+
+a {
+    color: $color__link;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $color__link-hover;
+    text-decoration: none;
+}
+
+a:visited {
+    color: $color__link-visited;
+}

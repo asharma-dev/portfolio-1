@@ -59,7 +59,7 @@ export class PostItem extends Component {
                         : null
                     }
                     <div dangerouslySetInnerHTML={{ __html: excerpt.rendered }} />
-                    <Link to={`/post/${id}`}>Read Review</Link>
+                    <Link to={`/blog/${id}`}>Read Review</Link>
                 </div> 
             )
         }

@@ -1,0 +1,18 @@
+.home-page {
+    .hero-section {
+        position: relative;
+        height: 100vh;
+        background-image: url(./../assets/images/pattern-geometry-2.png);
+        background-position: top right;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: $color__white;
+        background-blend-mode: luminosity;
+    }
+
+    .hero-text {
+        position: absolute;
+        bottom: 50px;
+    }
+}
