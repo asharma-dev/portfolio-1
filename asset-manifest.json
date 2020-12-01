@@ -1,23 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.17ac5a42.chunk.css",
-    "main.js": "/static/js/main.f44c275a.chunk.js",
-    "main.js.map": "/static/js/main.f44c275a.chunk.js.map",
+    "main.css": "/static/css/main.d3a9b961.chunk.css",
+    "main.js": "/static/js/main.e1a0c321.chunk.js",
+    "main.js.map": "/static/js/main.e1a0c321.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e327d292.js",
     "runtime-main.js.map": "/static/js/runtime-main.e327d292.js.map",
-    "static/js/2.dee89ef5.chunk.js": "/static/js/2.dee89ef5.chunk.js",
-    "static/js/2.dee89ef5.chunk.js.map": "/static/js/2.dee89ef5.chunk.js.map",
+    "static/js/2.a05a7f14.chunk.js": "/static/js/2.a05a7f14.chunk.js",
+    "static/js/2.a05a7f14.chunk.js.map": "/static/js/2.a05a7f14.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.cbb2a467c8360ded82bd40409f38654c.js": "/precache-manifest.cbb2a467c8360ded82bd40409f38654c.js",
+    "precache-manifest.6d205b22160d50e1f28bddc6bae1d07f.js": "/precache-manifest.6d205b22160d50e1f28bddc6bae1d07f.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.17ac5a42.chunk.css.map": "/static/css/main.17ac5a42.chunk.css.map",
-    "static/js/2.dee89ef5.chunk.js.LICENSE.txt": "/static/js/2.dee89ef5.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "/static/media/pattern-geometry-2.a46e500d.png"
+    "static/css/main.d3a9b961.chunk.css.map": "/static/css/main.d3a9b961.chunk.css.map",
+    "static/js/2.a05a7f14.chunk.js.LICENSE.txt": "/static/js/2.a05a7f14.chunk.js.LICENSE.txt",
+    "static/media/006-react.eab76719.svg": "/static/media/006-react.eab76719.svg",
+    "static/media/021-mysql.b018dd4e.svg": "/static/media/021-mysql.b018dd4e.svg",
+    "static/media/026-sass.3023657d.svg": "/static/media/026-sass.3023657d.svg",
+    "static/media/027-php.d956cbbb.svg": "/static/media/027-php.d956cbbb.svg",
+    "static/media/029-javascript.e169ba29.svg": "/static/media/029-javascript.e169ba29.svg",
+    "static/media/030-html-5.15a5a8bd.svg": "/static/media/030-html-5.15a5a8bd.svg",
+    "static/media/031-css.55338d57.svg": "/static/media/031-css.55338d57.svg",
+    "static/media/032-nodejs.be2df796.svg": "/static/media/032-nodejs.be2df796.svg",
+    "static/media/App.scss": "/static/media/pattern-geometry-2.a46e500d.png",
+    "static/media/wordpress.2544dd9e.svg": "/static/media/wordpress.2544dd9e.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e327d292.js",
-    "static/js/2.dee89ef5.chunk.js",
-    "static/css/main.17ac5a42.chunk.css",
-    "static/js/main.f44c275a.chunk.js"
+    "static/js/2.a05a7f14.chunk.js",
+    "static/css/main.d3a9b961.chunk.css",
+    "static/js/main.e1a0c321.chunk.js"
   ]
 }
