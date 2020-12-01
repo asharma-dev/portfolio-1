@@ -1,6 +1,30 @@
 @import './layout-home';
 
 
+main {
+  min-height: 100vh;
+}
+
+section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+  @media screen and (min-width: 800px) {
+    section {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    section {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+}
+
+
 @media screen and (min-width: 1000px) {
   #root {
     display: flex;
@@ -8,15 +32,23 @@
     background-color: #F7F7F2;
   }
 
-  header {
-    flex-basis: 28%;
-  }
 
   main {
-    flex-basis: 70%;
-    height: 1200px;
+    flex-basis: 75%;
   }
 }
-main {
-  min-height: 100vh;
+
+.section-blog {
+  padding-top: 2rem;
+}
+
+.single-post,
+.content-post-list {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.section-heading {
+  text-align: center;
 }

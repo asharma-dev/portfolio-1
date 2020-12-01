@@ -55,21 +55,24 @@ export default function SiteHeader() {
 
             <div className="site-header-container">
 
+                <div className="site-name">
+                    <h1>dalbir.me</h1>
+                </div>
+                
                 <div className="user-intro">
                     <div className="user-avatar">
                         <img src={userData.avatar} alt="dalbir singh" />
                     </div>
                     <div className="user-name">
-                        {userData.name}
+                        <h3>{userData.name}</h3>
                     </div>
                     <div className="user-bio">
-                        {userData.bio}
+                        <p>{userData.bio}</p>
                     </div>
                     <div className="user-loc">
-                        {userData.loc}
+                        <p>{userData.loc}</p>
                     </div>
                 </div>
-
 
                 <SiteNavigation hideMenu={toggleButton} />
             </div>

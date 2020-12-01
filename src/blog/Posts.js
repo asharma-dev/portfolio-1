@@ -23,19 +23,23 @@ export class Posts extends Component {
     }
 
     render() {
+
         const { posts, isLoaded } = this.state;
-        if(isLoaded) {
-            return (
-                <div>
-                    { posts.map(post => (
+        
+        return (
+            <section className="section-blog">
+                <h1 className="section-heading">Blog posts</h1>
+                {
+                    isLoaded ? 
+                    posts.map(post => (
                         <PostItem key={post.id} post={post} />
-                    )) }
-                </div>
-            );
+                    )) :
+                    (<h1>Loading...</h1>)
+                }
+            </section>
+        );
         }
 
-        return <h3>Loading...</h3>
-    }
 }
 
 export default Posts

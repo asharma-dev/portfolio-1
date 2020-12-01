@@ -1,7 +1,7 @@
 import Axios from 'axios'
 import { Link } from 'react-router-dom'
 import BaseUrl from '../proxy'
-import React, { Fragment, useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 
 function PostPage(props) {
 
@@ -33,14 +33,15 @@ function PostPage(props) {
     }, [fetchData, postId]);
 
 
-        return (
-            <Fragment>
-                <Link to='/blog'>Go Back</Link>
-                <hr />
-                <h1 dangerouslySetInnerHTML={{ __html: resData.title.rendered }} />
+    return (
+        <section className="section-blog">
+            <div className="single-post">
+                <h1 className="section-heading" dangerouslySetInnerHTML={{ __html: resData.title.rendered }} />
+                <Link to='/blog'> &lt;&lt; Back</Link>
                 <div dangerouslySetInnerHTML={{ __html: resData.content.rendered }} />
-            </Fragment>
-        )
+            </div>
+        </section>
+    )
 
 }
 
