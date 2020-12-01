@@ -28,7 +28,6 @@ export class Posts extends Component {
             return (
                 <div>
                     { posts.map(post => (
-                        // <h4>{ book.title.rendered }</h4>
                         <PostItem key={post.id} post={post} />
                     )) }
                 </div>

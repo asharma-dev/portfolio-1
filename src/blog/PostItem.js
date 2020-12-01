@@ -25,11 +25,12 @@ export class PostItem extends Component {
         getImgUrl =  getMedia.data.media_details.sizes.full.source_url;
         }
 
-        const getAuthor = await axios.get(`${BaseUrl}/wp-json/wp/v2/users/${author}`);
+        // const getAuthor = await axios.get(`${BaseUrl}/wp-json/wp/v2/users/${author}`);
 
         this.setState({
             imgUrl: getImgUrl,
-            author: getAuthor.data.name,
+            // author: getAuthor.data.name,
+            author: '',
             isLoaded: true
         });
     }
