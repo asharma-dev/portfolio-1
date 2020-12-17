@@ -4,12 +4,11 @@
 // to place logo and navigation
 /**********************************************/
 
-
 .site-header-container {
   background-color: $color__pale;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: stretch;
   height: 100vh;
   position: fixed;
@@ -34,6 +33,8 @@
 .site-name {
   text-align: center;
 }
+
+
 
   // site main navigation
 .site-main-nav {
@@ -62,39 +63,44 @@
       }
 
       a {
-        font-size: 1rem;
-        color: $color__black;
+        font-size: 1.1rem;
+        color: $color__white;
         position: relative;
-        text-transform: uppercase;
+        letter-spacing: 2px;
+        // text-transform: uppercase;
         border-radius: 0.25rem;
         padding: 0.5rem;
         text-decoration: none;
-
-        &::after {
-          content: "";
-          width: 100%;
-          position: absolute;
-          bottom: 20%;
-          left: 0;
-          right: 0;
-          border-bottom: 8px solid $color__orange_transparent;
-          transition: all 0.3s;
-        }
       }
-
 
       a:hover {
         text-decoration: none;
       }
-  
-      a:hover::after {
-        border-bottom-width: 1px;
+
+      &:hover {
+        background-color: $color__black;
       }
 
     }
 }
 
 
+// mobile header
+
+.header-mobile {
+  background-color: $color__pale;
+  width: 100%;
+  height: 4rem;
+  padding: 1rem;
+  z-index: 99999999;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(4px);
+  opacity: 0.98;
+}
 
 // mobile menu
 button.main-nav-button {
@@ -103,10 +109,6 @@ button.main-nav-button {
   box-shadow: 0px 0px 4px 0px silver;
   height: 40px;
   width: 46px;
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  z-index: 99999999;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -188,7 +190,7 @@ button.main-nav-button {
     transform: translateX(0);
   } 
 
-  button.main-nav-button {
+  .header-mobile {
     display: none;
   }
 }
@@ -227,6 +229,37 @@ button.main-nav-button {
     font-size: small;
   }
 
+}
+
+.user-social {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+
+  li {
+    margin: 1rem;
+    width: 34px;
+    height: 34px;
+    position: relative;
+
+    a {
+      display: inline-block;
+    }
+
+  }
+
+
+}
+
+
+.resume-download-link {
+  margin-top: 3rem;
+  font-size: 1.1rem;
+  text-decoration: underline;
+  color: $color__orange;
 }
 
 

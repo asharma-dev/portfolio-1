@@ -15,7 +15,14 @@ const Work = () => {
             title: "Blog.NoOdor.com", 
             link: "http://blog.noodor.com", 
             desc: "wordpres site", 
-            techStack: ['list', 'list2']
+            techStack: ['WordPress Theme Design']
+        },
+        { 
+            imgUrl: "realistings.jpg", 
+            title: "Realistings.wmdd.ca", 
+            link: "https://realistings.wmdd.ca", 
+            desc: "WordPres site", 
+            techStack: ['WordPress', 'Custom Posts']
         }
     ]
 
@@ -27,19 +34,23 @@ const Work = () => {
                 {
                     workList.map( (res, index) => (
                         <div key={index} className="card">
+
+                            <h3 className="card-title"><a href={res.link}>{res.title}</a></h3>
+                            
                             <div className="card-image">
                                 <img src={process.env.PUBLIC_URL + '/work/' + res.imgUrl} alt="" />
                             </div>
+                            
                             <div className="card-content">
-                                <p className="card-title"><a href={res.link}>{res.title}</a></p>
-
-                                <p>{res.desc}</p>
-
+                                
                                 <ul className="techstack">
                                     { res.techStack.map( (item)=>(
                                         <li>{item}</li>
-                                    ))}
+                                        ))}
                                 </ul>
+
+                                {/* <p className="card-desc">{res.desc}</p> */}
+
                             </div>
                         </div>
                     ))

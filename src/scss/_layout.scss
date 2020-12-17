@@ -1,6 +1,5 @@
 @import './layout-home';
 
-
 main {
   min-height: 100vh;
 }
@@ -10,14 +9,14 @@ section {
   padding-right: 1rem;
 }
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 1000px) {
     section {
       padding-left: 3rem;
       padding-right: 3rem;
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1400px) {
     section {
       padding-left: 5rem;
       padding-right: 5rem;
@@ -51,4 +50,21 @@ section {
 
 .section-heading {
   text-align: center;
+}
+
+
+.content-heading {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.container-contact {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 4rem;
+  }
 }

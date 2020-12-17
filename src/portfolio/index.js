@@ -1,5 +1,6 @@
 import React from "react"
 import Work from './work'
+import AboutMe from './about'
 
 import { ReactComponent as ReactIcon } from './../assets/icon-svg/006-react.svg'
 import { ReactComponent as MysqlIcon } from './../assets/icon-svg/021-mysql.svg'
@@ -39,32 +40,31 @@ const IndexPage = () => {
           <div className="expertise-icons">
             <ul>
               <li>
-                <WordpresIcon /><p>Wordpress</p>
+                <WordpresIcon /><p className="sr-only">Wordpress</p>
               </li>
               <li>
-                <JavascriptIcon /><p>JavaScript</p>
+                <JavascriptIcon /><p className="sr-only">JavaScript</p>
               </li>
               <li>
-                <ReactIcon />
-                <p>ReactJS</p>
+                <ReactIcon /><p className="sr-only">ReactJS</p>
               </li>
               <li>
-                <HtmlIcon /><p>HTML5</p>
+                <HtmlIcon /><p className="sr-only">HTML5</p>
               </li>
               <li>
-                <CssIcon /><p>CSS3</p>
+                <CssIcon /><p className="sr-only">CSS3</p>
               </li>
               <li>
-                <SassIcon /><p>SASS</p>
+                <SassIcon /><p className="sr-only">SASS</p>
               </li>
               <li>
-                <PhpIcon /><p>PHP</p>
+                <PhpIcon /><p className="sr-only">PHP</p>
               </li>
               <li>
-                <NodeIcon /><p>NodeJS</p>
+                <NodeIcon /><p className="sr-only">NodeJS</p>
               </li>
               <li>
-                <MysqlIcon /><p>MySQL</p>
+                <MysqlIcon /><p className="sr-only">MySQL</p>
               </li>
             </ul>
           </div>
@@ -72,6 +72,8 @@ const IndexPage = () => {
           <p className="icons-disclaimer">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
 
         </section>
+
+        <AboutMe />
 
         <Work />        
 

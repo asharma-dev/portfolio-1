@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import SiteNavigation from '../SiteNavigation'
 import Axios from 'axios'
+import { Link } from 'react-router-dom';
+
+import GithubIcon from '../../assets/icon-png/github.png';
+import LinkedinIcon from '../../assets/icon-png/linkedin.png';
 
 export default function SiteHeader() {
 
@@ -36,14 +40,26 @@ export default function SiteHeader() {
         }
     }, []);
 
+    const siteHeader = document.querySelector('.site-header');
 
     const toggleButton = function () {
-        document.querySelector('.site-header').classList.toggle("active");
+        siteHeader.classList.toggle("active");
+    }
+
+    const hideMenu = () => {    
+        if (siteHeader.classList.contains('active')) {
+            siteHeader.classList.remove('active')
+        }
     }
 
     return (
         <header className="site-header">
-            <div className="button-mobile">
+            <div className="header-mobile">
+                
+                <h2>
+                    <Link to="./" onClick={ hideMenu }>dalbir.me</Link>
+                </h2>
+                
                 <button 
                     onClick={ toggleButton } 
                     className="main-nav-button" 
@@ -54,10 +70,6 @@ export default function SiteHeader() {
             </div>
 
             <div className="site-header-container">
-
-                <div className="site-name">
-                    <h1>dalbir.me</h1>
-                </div>
                 
                 <div className="user-intro">
                     <div className="user-avatar">
@@ -72,9 +84,26 @@ export default function SiteHeader() {
                     <div className="user-loc">
                         <p>{userData.loc}</p>
                     </div>
+                   
+
+                    <ul className="user-social">
+                        <li>
+                            <a href="https://github.com/dalbirsrana">
+                               <img src={GithubIcon} alt="GitHub" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/dalbirsrana/">
+                                <img src={LinkedinIcon} alt="Linkedin" />
+                            </a>
+                        </li>
+                    </ul>
                 </div>
 
-                <SiteNavigation hideMenu={toggleButton} />
+
+
+                <SiteNavigation toggleButton={toggleButton} />
+
             </div>
             <div className="back-drop"></div>
         </header>

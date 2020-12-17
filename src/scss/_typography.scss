@@ -1,6 +1,6 @@
 body {
     font-family: $font__body;
-    font-size: $font__size_base;
+    font-size: $font__size-sm;
     font-weight: 400;
     line-height: $font__line-height-body;
     color: $color__black;
@@ -23,6 +23,10 @@ h3 {
 }
 
 @media screen and (min-width: 1000px) {
+    body {
+        font-size: $font__size_base;
+    }
+
     h1 {
         font-size: $font__size_xxxl;
     }

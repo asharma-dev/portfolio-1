@@ -4,27 +4,28 @@ import { Link } from 'react-router-dom';
 
 
 
-const SiteNav = ({hideMenu}) => (
+const SiteNav = ({toggleButton}) => (
     
     <nav className="site-main-nav">
 
         <div className="nav-wrapper">
             <ul>
                 <li>
-                    <Link to="." onClick={ hideMenu }>Home</Link>
+                    <Link to="." onClick={ toggleButton }>Home</Link>
                 </li>
+
                 <li>
-                    <Link to="./blog" onClick={hideMenu}>Blog</Link>
+                    <Link to="./resume" onClick={toggleButton}>My Resume</Link>
                 </li>
+                
                 <li>
-                    <Link to="./Work" onClick={hideMenu}>Work</Link>
+                    <Link to="./contact" onClick={toggleButton}>Contact</Link>
                 </li>
+
                 <li>
-                    <Link to="./about" onClick={hideMenu}>About</Link>
+                    <Link to="./blog" onClick={toggleButton}>Blog</Link>
                 </li>
-                <li>
-                    <Link to="./contact" onClick={hideMenu}>Contact</Link>
-                </li>
+
             </ul>
         </div>
         
