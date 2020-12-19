@@ -1,52 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import SiteNavigation from '../SiteNavigation'
-import Axios from 'axios'
 import { Link } from 'react-router-dom';
-
-import GithubIcon from '../../assets/icon-png/github.png';
-import LinkedinIcon from '../../assets/icon-png/linkedin.png';
 
 export default function SiteHeader() {
 
-    const [userData, setUserData] = useState({
-        name: '',
-        bio: '',
-        avatar: '',
-        loc: ''
-    });
-
-    const fetchProfile = () => {
-        Axios.get('https://api.github.com/users/dalbirsrana')
-        .then(res => {
-            setUserData({
-                name: res.data.name,
-                bio: res.data.bio,
-                avatar: res.data.avatar_url,
-                loc: res.data.location
-            })
-            console.log(res)
-        })
-        .catch(err => console.log(err))
-    }
-
-
-    useEffect(() => {
-        let isUnMount = false;
-        if (!isUnMount) {
-            fetchProfile();
-        }
-        return () => {
-            isUnMount = true;
-        }
-    }, []);
-
-    const siteHeader = document.querySelector('.site-header');
-
     const toggleButton = function () {
+        const siteHeader = document.querySelector('.site-header');
         siteHeader.classList.toggle("active");
     }
 
     const hideMenu = () => {    
+        const siteHeader = document.querySelector('.site-header');
         if (siteHeader.classList.contains('active')) {
             siteHeader.classList.remove('active')
         }
@@ -70,38 +34,9 @@ export default function SiteHeader() {
             </div>
 
             <div className="site-header-container">
+
+                <div className="site-title"><h2>dalbir.me</h2></div>
                 
-                <div className="user-intro">
-                    <div className="user-avatar">
-                        <img src={userData.avatar} alt="dalbir singh" />
-                    </div>
-                    <div className="user-name">
-                        <h3>{userData.name}</h3>
-                    </div>
-                    <div className="user-bio">
-                        <p>{userData.bio}</p>
-                    </div>
-                    <div className="user-loc">
-                        <p>{userData.loc}</p>
-                    </div>
-                   
-
-                    <ul className="user-social">
-                        <li>
-                            <a href="https://github.com/dalbirsrana">
-                               <img src={GithubIcon} alt="GitHub" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/dalbirsrana/">
-                                <img src={LinkedinIcon} alt="Linkedin" />
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-
-
                 <SiteNavigation toggleButton={toggleButton} />
 
             </div>

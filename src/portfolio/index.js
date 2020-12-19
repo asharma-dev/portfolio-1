@@ -1,19 +1,45 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
+import Axios from 'axios'
+
 import Work from './work'
 import AboutMe from './about'
 
-import { ReactComponent as ReactIcon } from './../assets/icon-svg/006-react.svg'
-import { ReactComponent as MysqlIcon } from './../assets/icon-svg/021-mysql.svg'
-import { ReactComponent as SassIcon } from './../assets/icon-svg/026-sass.svg'
-import { ReactComponent as JavascriptIcon } from './../assets/icon-svg/029-javascript.svg'
-import { ReactComponent as HtmlIcon } from './../assets/icon-svg/030-html-5.svg'
-import { ReactComponent as CssIcon } from './../assets/icon-svg/031-css.svg'
-import { ReactComponent as NodeIcon } from './../assets/icon-svg/032-nodejs.svg'
-import { ReactComponent as PhpIcon } from './../assets/icon-svg/027-php.svg'
-import { ReactComponent as WordpresIcon } from './../assets/icon-svg/wordpress.svg'
-
+import GithubIcon from '../assets/icon-png/github.png';
+import LinkedinIcon from '../assets/icon-png/linkedin.png';
 
 const IndexPage = () => {
+
+  const [userData, setUserData] = useState({
+    avatar: '',
+    loc: ''
+  });
+
+  const fetchProfile = () => {
+    Axios.get('https://api.github.com/users/dalbirsrana')
+    .then(res => {
+        setUserData({
+            avatar: res.data.avatar_url,
+            loc: res.data.location
+        })
+        console.log(res)
+    })
+    .catch(err => console.log(err))
+}
+
+
+useEffect(() => {
+  
+  document.title = window.location.hostname + ": Portfolio";
+
+  let isUnMount = false;
+  if (!isUnMount) {
+      fetchProfile();
+  }
+  return () => {
+      isUnMount = true;
+  }
+}, []);
+
 
   const greetings = () => {
     let d = new Date();
@@ -25,57 +51,55 @@ const IndexPage = () => {
   }
 
   return (
-      <div className="home-page">
+    <div className="home-page">
         <section className="section-hero">
-          <div className="hero-text">
-            <h1 className="hero-greetings">{greetings()}</h1>
-            <h2 className="hero-intro">I'm Dalbir, <span>&lt;</span>front-end <span>&#47;&gt;</span> web developer</h2>
+
+        <div className="hero-text">
+
+          <div className="user-intro">
+            <div className="user-avatar">
+                <img src={userData.avatar} alt="dalbir singh" />
+            </div>                 
+
+            <ul className="user-social">
+                <li>
+                    <a href="https://github.com/dalbirsrana">
+                        <img src={GithubIcon} alt="GitHub" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/dalbirsrana/">
+                        <img src={LinkedinIcon} alt="Linkedin" />
+                    </a>
+                </li>
+            </ul>
+          </div>
+
+            <h1 className="hero-greetings">{greetings()}, My name is Dalbir.</h1>
+            {/* <h2 className="hero-intro">.</h2>  */}
+            <h2 className="hero-intro">I am a <span>&lt;</span>FrontEnd <span>&#47;&gt;</span> <span>{"{"}</span>Developer<span>{"}"}</span> living in {userData.loc}, CA.</h2>
 
             <h1 className="hero-welcome">Welcome to my portfolio!</h1>
           </div>
         </section>
 
-        <section className="section-expertise">
-          <h1 className="content-heading">My Expertise</h1>
-          <div className="expertise-icons">
-            <ul>
-              <li>
-                <WordpresIcon /><p className="sr-only">Wordpress</p>
-              </li>
-              <li>
-                <JavascriptIcon /><p className="sr-only">JavaScript</p>
-              </li>
-              <li>
-                <ReactIcon /><p className="sr-only">ReactJS</p>
-              </li>
-              <li>
-                <HtmlIcon /><p className="sr-only">HTML5</p>
-              </li>
-              <li>
-                <CssIcon /><p className="sr-only">CSS3</p>
-              </li>
-              <li>
-                <SassIcon /><p className="sr-only">SASS</p>
-              </li>
-              <li>
-                <PhpIcon /><p className="sr-only">PHP</p>
-              </li>
-              <li>
-                <NodeIcon /><p className="sr-only">NodeJS</p>
-              </li>
-              <li>
-                <MysqlIcon /><p className="sr-only">MySQL</p>
-              </li>
-            </ul>
-          </div>
-
-          <p className="icons-disclaimer">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
-
-        </section>
-
         <AboutMe />
 
-        <Work />        
+        <Work />  
+
+        <section className="section-hire">
+
+          <h2>I am open for jobs as Web Application developer</h2>
+
+          <h1>Get in touch!</h1>
+
+          <ul>
+            <li><a href="mailto:dalbirsrana@gmail.com">dalbirsrana@gmail.com</a></li>
+            <li>+1.236.987.8514</li>
+            <li><a href="https://www.linkedin.com/in/dalbirsrana/">linkedin.com/in/dalbirsrana/</a></li>
+          </ul>
+
+        </section>
 
       </div>
   )

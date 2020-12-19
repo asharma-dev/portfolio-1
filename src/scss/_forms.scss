@@ -15,7 +15,7 @@ input[type="color"],
 input,
 textarea {
 	backface-visibility: hidden;
-	border: solid 1px $color__border-input;
+	border: solid 1px $color__red;
 	box-sizing: border-box;
 	outline: none;
 	padding: 0.2rem;
@@ -25,8 +25,8 @@ textarea {
 	max-width: 400px;
 
 	&:focus {
-		border-color: $color__border-green;
-		outline: thin solid $color__green;
+		border-color: $color__red;
+		outline: thin solid $color__red;
 		outline-offset: -4px;
 	}
 }

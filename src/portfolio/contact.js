@@ -14,6 +14,8 @@ const About = () => {
                         dalbirsrana@gmail.com
                     </a>
                 </h1>
+
+                <h1>+1.236.987.8514</h1>
                 
             </div>
         </section>

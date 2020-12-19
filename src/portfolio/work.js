@@ -15,14 +15,28 @@ const Work = () => {
             title: "Blog.NoOdor.com", 
             link: "http://blog.noodor.com", 
             desc: "wordpres site", 
-            techStack: ['WordPress Theme Design']
+            techStack: ['WordPress', 'Custom Theme']
         },
         { 
             imgUrl: "realistings.jpg", 
             title: "Realistings.wmdd.ca", 
             link: "https://realistings.wmdd.ca", 
             desc: "WordPres site", 
-            techStack: ['WordPress', 'Custom Posts']
+            techStack: ['WordPress', 'Custom Theme', 'Custom Posts']
+        },
+        { 
+            imgUrl: "noodor.jpg", 
+            title: "NoOdor.com", 
+            link: "https://noodor.com", 
+            desc: "eCommerce", 
+            techStack: ['eCommerce', 'jQuery', 'CSS', 'Miva Script']
+        },
+        { 
+            imgUrl: "smellrid.jpg", 
+            title: "Smellrid.com", 
+            link: "https://smellrid.com", 
+            desc: "eCommerce", 
+            techStack: ['eCommerce', 'jQuery', 'CSS', 'Miva Script']
         }
     ]
 
@@ -38,7 +52,9 @@ const Work = () => {
                             <h3 className="card-title"><a href={res.link}>{res.title}</a></h3>
                             
                             <div className="card-image">
+                            <a href={res.link}>
                                 <img src={process.env.PUBLIC_URL + '/work/' + res.imgUrl} alt="" />
+                            </a>
                             </div>
                             
                             <div className="card-content">

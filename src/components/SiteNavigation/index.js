@@ -15,7 +15,7 @@ const SiteNav = ({toggleButton}) => (
                 </li>
 
                 <li>
-                    <Link to="./resume" onClick={toggleButton}>My Resume</Link>
+                    <Link to="./resume" onClick={toggleButton}>Resume</Link>
                 </li>
                 
                 <li>

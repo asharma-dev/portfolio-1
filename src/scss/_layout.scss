@@ -1,12 +1,15 @@
 @import './layout-home';
 
 main {
-  min-height: 100vh;
+  min-height: 100vh; 
+}
+
+main > section:first-child {
+  margin-top: 4rem;
 }
 
 section {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 1rem;
 }
 
   @media screen and (min-width: 1000px) {
@@ -27,19 +30,16 @@ section {
 @media screen and (min-width: 1000px) {
   #root {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     background-color: #F7F7F2;
   }
 
 
   main {
-    flex-basis: 75%;
+    flex-basis: calc(100% - 100px);
   }
 }
 
-.section-blog {
-  padding-top: 2rem;
-}
 
 .single-post,
 .content-post-list {
@@ -52,19 +52,18 @@ section {
   text-align: center;
 }
 
-
 .content-heading {
-  margin-top: 5rem;
   text-align: center;
 }
 
 .container-contact {
-  height: 60vh;
+  margin-top: 20vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   h1 {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 }
