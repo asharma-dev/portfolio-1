@@ -49,7 +49,7 @@ const Work = () => {
                     workList.map( (res, index) => (
                         <div key={index} className="card">
 
-                            <h3 className="card-title"><a href={res.link}>{res.title}</a></h3>
+                            <p className="card-title"><a href={res.link}><i class="fas fa-link"></i> {res.title}</a></p>
                             
                             <div className="card-image">
                             <a href={res.link}>

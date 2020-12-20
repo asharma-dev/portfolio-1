@@ -39,6 +39,8 @@ export default function SiteHeader() {
                 
                 <SiteNavigation toggleButton={toggleButton} />
 
+                <div className="copy-note">&copy; dalbir.me<br></br>All rights reserved.</div>
+
             </div>
             <div className="back-drop"></div>
         </header>

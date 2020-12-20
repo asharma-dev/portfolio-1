@@ -5,17 +5,21 @@ const About = () => {
     return (
         <section className="section-contact">
             
-            <h1 className="content-heading">Contact Me</h1>
+            <h1 className="content-heading">Get in touch!</h1>
 
             <div className="container-contact">
             
-                <h1>
+                <p>
                     <a href="mailto:dalbirsrana@gmail.com">
-                        dalbirsrana@gmail.com
+                    <i class="fas fa-envelope"></i>  dalbirsrana@gmail.com
                     </a>
-                </h1>
+                </p>
 
-                <h1>+1.236.987.8514</h1>
+                <p>
+                    <a href="tel:+1.236.987.8514">
+                        <i class="fas fa-mobile-alt"></i> +1.236.987.8514
+                    </a>
+                </p>
                 
             </div>
         </section>

@@ -184,13 +184,18 @@ button.main-nav-button {
   display: none;
 }
 
+.copy-note {
+  font-size: 11px;
+  text-align: center;
+  color: rgb(255, 252, 246);
+}
 
 // media query after 1000px widht
 
 @media screen and (min-width: 1000px) {
   .site-header-container { 
     height: 100vh;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
   .site-header-container {
     position: fixed;
@@ -205,13 +210,32 @@ button.main-nav-button {
 
   .site-title {
     display: block;
+    align-self: center;
     
     h2 {
-      text-decoration: underline;
+      text-align: center;
       color: white;
-      transform: rotateZ(-30deg);
-      margin-bottom: 8rem;
-      margin-top: 3rem;
+      transform: rotateZ(350deg);
+      margin-top: 2rem;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+      }
+
+      &::before {
+        top: 0;
+      }
+
+      &::after {
+        bottom: -3px;
+      }
     }
   }
 }

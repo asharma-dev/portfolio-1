@@ -45,9 +45,9 @@ useEffect(() => {
     let d = new Date();
     let time = d.getHours();
     if (time < 4) return ("Hi!")
-    if (time > 4 && time < 12) return ("Good Morning!")
-    if (time > 12 && time < 17) return ("Good Afternoon!")
-    if (time > 17) return ("Good Evening!")
+    if (time >= 4 && time < 12) return ("Good Morning!")
+    if (time >= 12 && time < 17) return ("Good Afternoon!")
+    if (time >= 17) return ("Good Evening!")
   }
 
   return (
@@ -94,9 +94,9 @@ useEffect(() => {
           <h1>Get in touch!</h1>
 
           <ul>
-            <li><a href="mailto:dalbirsrana@gmail.com">dalbirsrana@gmail.com</a></li>
-            <li>+1.236.987.8514</li>
-            <li><a href="https://www.linkedin.com/in/dalbirsrana/">linkedin.com/in/dalbirsrana/</a></li>
+            <li><a href="mailto:dalbirsrana@gmail.com"><i class="fas fa-envelope"></i> dalbirsrana@gmail.com</a></li>
+            <li><a href="tel:+1.236.987.8514"><i class="fas fa-mobile-alt"></i> +1.236.987.8514</a></li>
+            <li><a href="https://www.linkedin.com/in/dalbirsrana/"><i class="fab fa-linkedin"></i> linkedin.com/in/dalbirsrana/</a></li>
           </ul>
 
         </section>
