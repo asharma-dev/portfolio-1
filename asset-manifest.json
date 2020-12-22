@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.62522fcb.chunk.css",
-    "main.js": "/static/js/main.2ff9ede7.chunk.js",
-    "main.js.map": "/static/js/main.2ff9ede7.chunk.js.map",
+    "main.js": "/static/js/main.1d8f9f51.chunk.js",
+    "main.js.map": "/static/js/main.1d8f9f51.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e327d292.js",
     "runtime-main.js.map": "/static/js/runtime-main.e327d292.js.map",
     "static/js/2.04b1242e.chunk.js": "/static/js/2.04b1242e.chunk.js",
     "static/js/2.04b1242e.chunk.js.map": "/static/js/2.04b1242e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9a6f5f1b2e4e60ac8fddefc6d8f73830.js": "/precache-manifest.9a6f5f1b2e4e60ac8fddefc6d8f73830.js",
+    "precache-manifest.f958fbfd69075d5d524a152d25cbc8ba.js": "/precache-manifest.f958fbfd69075d5d524a152d25cbc8ba.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.62522fcb.chunk.css.map": "/static/css/main.62522fcb.chunk.css.map",
     "static/js/2.04b1242e.chunk.js.LICENSE.txt": "/static/js/2.04b1242e.chunk.js.LICENSE.txt",
@@ -20,7 +20,7 @@
     "static/media/030-html-5.15a5a8bd.svg": "/static/media/030-html-5.15a5a8bd.svg",
     "static/media/031-css.55338d57.svg": "/static/media/031-css.55338d57.svg",
     "static/media/032-nodejs.be2df796.svg": "/static/media/032-nodejs.be2df796.svg",
-    "static/media/ResumeDalbir.pdf": "/static/media/ResumeDalbir.9b056a57.pdf",
+    "static/media/Resume-Dalbir.pdf": "/static/media/Resume-Dalbir.84727456.pdf",
     "static/media/App.scss": "/static/media/pattern-geometry-2.a46e500d.png",
     "static/media/wordpress.2544dd9e.svg": "/static/media/wordpress.2544dd9e.svg"
   },
@@ -28,6 +28,6 @@
     "static/js/runtime-main.e327d292.js",
     "static/js/2.04b1242e.chunk.js",
     "static/css/main.62522fcb.chunk.css",
-    "static/js/main.2ff9ede7.chunk.js"
+    "static/js/main.1d8f9f51.chunk.js"
   ]
 }
