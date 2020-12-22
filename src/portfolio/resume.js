@@ -1,12 +1,12 @@
 import React from 'react';
-import ResumeLink from '../assets/ResumeDalbir.pdf';
+import ResumeLink from '../assets/Resume-Dalbir.pdf';
 
 const Resume = () => {
 
     return (
         <section className="section-resume">
                 <iframe
-                    style={{ width: "100%", maxWidth: '800px', height: "99vh", border: "none" }}
+                    style={{ width: "100%", maxWidth: '900px', height: "90vh", border: "none" }}
                     src={ResumeLink}
                     type='application/pdf'
                     title='Resume'
