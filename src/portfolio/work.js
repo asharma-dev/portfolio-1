@@ -19,8 +19,8 @@ const Work = () => {
         },
         { 
             imgUrl: "realistings.jpg", 
-            title: "Realistings.wmdd.ca", 
-            link: "https://realistings.wmdd.ca", 
+            title: "Realisting.imtek.biz", 
+            link: "http://realisting.imtek.biz", 
             desc: "WordPres site", 
             techStack: ['WordPress', 'Custom Theme', 'Custom Posts']
         },

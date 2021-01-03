@@ -1,3 +1,3 @@
-const proxy = "https://dalbir.wmdd.ca"
+const proxy = "http://realisting.imtek.biz/"
 
 export default proxy
