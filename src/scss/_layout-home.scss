@@ -14,8 +14,6 @@
         border-top: 6px solid $color__orange;
     }
 
-
-
     .hero-text {
         color: $color__grey;
         position: absolute;
@@ -71,7 +69,8 @@
     align-items: flex-start;
   
     .user-avatar {
-      max-width: 160px;
+      width: 160px;
+      height: 160px;
       border: 6px solid transparent;
       border-top: 5px solid $color__orange;
       border-bottom: 5px solid $color__orange;
@@ -220,7 +219,7 @@
         margin: 1rem;
         border: 1px solid #d6d6d6;
         box-shadow: 6px 6px 0px 0px #fff0e3;
-        // border-radius: .25rem;
+        border-radius: .25rem;
         transition: transform .25s ease-out, box-shadow .25s ease-out;
 
         &:hover {

@@ -77,7 +77,7 @@ useEffect(() => {
 
             <h1 className="hero-greetings">{greetings()}, My name is Dalbir.</h1>
             {/* <h2 className="hero-intro">.</h2>  */}
-            <h2 className="hero-intro">I am a <span>&lt;</span>FullStack <span>&#47;&gt;</span> WEB <span>{"{"}</span>Developer<span>{"}"}</span> living in {userData.loc}, CA.</h2>
+            <h2 className="hero-intro">I am a <span>&lt;</span>FrontEnd <span>&#47;&gt;</span> WEB <span>{"{"}</span>Developer<span>{"}"}</span> living in {userData.loc}, CA.</h2>
 
             <h1 className="hero-welcome">Welcome to my portfolio!</h1>
           </div>

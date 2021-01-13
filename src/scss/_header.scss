@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: stretch;
-  height: 300px;
+  height: 320px;
   position: fixed;
   top: 0;
   left: 0;
@@ -190,7 +190,7 @@ button.main-nav-button {
   color: rgb(255, 252, 246);
 }
 
-// media query after 1000px widht
+// media query after 1000px width
 
 @media screen and (min-width: 1000px) {
   .site-header-container { 
@@ -238,14 +238,6 @@ button.main-nav-button {
       }
     }
   }
-}
-
-
-.resume-download-link {
-  margin-top: 3rem;
-  font-size: 1.1rem;
-  text-decoration: underline;
-  color: $color__orange;
 }
 
 

@@ -1,3 +1,3 @@
-const proxy = "http://realisting.imtek.biz/"
+const proxy = "https://homedecor-painting.com/"
 
 export default proxy

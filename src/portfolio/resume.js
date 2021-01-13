@@ -5,12 +5,21 @@ const Resume = () => {
 
     return (
         <section className="section-resume">
-                <iframe
-                    style={{ width: "100%", maxWidth: '900px', height: "90vh", border: "none" }}
-                    src={ResumeLink}
-                    type='application/pdf'
-                    title='Resume'
-                />
+            <div className="content-resume">
+                <object 
+                    data={ResumeLink}
+                    type="application/pdf"
+                    style={{ width: "100%", height: "100%" }} 
+                    width="100%" 
+                    height="100%">
+                    <p>
+                        Your web browser doesn't have a PDF plugin. Instead you can 
+                        <a href={ResumeLink}>
+                            click here to download the PDF file.
+                        </a>
+                    </p>
+                </object>
+            </div>
         </section>
     )
 }

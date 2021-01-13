@@ -21,7 +21,7 @@ export default function SiteHeader() {
             <div className="header-mobile">
                 
                 <h2>
-                    <Link to="./" onClick={ hideMenu }>dalbir.me</Link>
+                    <Link to="/" className="mobile-logo" onClick={ hideMenu }>dalbir.me</Link>
                 </h2>
                 
                 <button 

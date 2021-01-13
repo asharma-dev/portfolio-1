@@ -37,8 +37,10 @@ function PostPage(props) {
         <section className="section-blog">
             <div className="single-post">
                 <h1 className="section-heading" dangerouslySetInnerHTML={{ __html: resData.title.rendered }} />
-                <Link to='/blog'> &lt;&lt; Back</Link>
                 <div dangerouslySetInnerHTML={{ __html: resData.content.rendered }} />
+                <div className="floating-back-button">
+                    <Link to='/blog'> &lt;&lt; Blog Home</Link>
+                </div>
             </div>
         </section>
     )
