@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.62522fcb.chunk.css",
-    "main.js": "/static/js/main.84b75114.chunk.js",
-    "main.js.map": "/static/js/main.84b75114.chunk.js.map",
+    "main.css": "/static/css/main.c7645b98.chunk.css",
+    "main.js": "/static/js/main.b27fad08.chunk.js",
+    "main.js.map": "/static/js/main.b27fad08.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e327d292.js",
     "runtime-main.js.map": "/static/js/runtime-main.e327d292.js.map",
-    "static/js/2.04b1242e.chunk.js": "/static/js/2.04b1242e.chunk.js",
-    "static/js/2.04b1242e.chunk.js.map": "/static/js/2.04b1242e.chunk.js.map",
+    "static/js/2.11465765.chunk.js": "/static/js/2.11465765.chunk.js",
+    "static/js/2.11465765.chunk.js.map": "/static/js/2.11465765.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9cf7806178788b7ea64db1f1b7deb803.js": "/precache-manifest.9cf7806178788b7ea64db1f1b7deb803.js",
+    "precache-manifest.2a07a55968adec2bfd7240360d387aff.js": "/precache-manifest.2a07a55968adec2bfd7240360d387aff.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.62522fcb.chunk.css.map": "/static/css/main.62522fcb.chunk.css.map",
-    "static/js/2.04b1242e.chunk.js.LICENSE.txt": "/static/js/2.04b1242e.chunk.js.LICENSE.txt",
+    "static/css/main.c7645b98.chunk.css.map": "/static/css/main.c7645b98.chunk.css.map",
+    "static/js/2.11465765.chunk.js.LICENSE.txt": "/static/js/2.11465765.chunk.js.LICENSE.txt",
     "static/media/006-react.eab76719.svg": "/static/media/006-react.eab76719.svg",
     "static/media/021-mysql.b018dd4e.svg": "/static/media/021-mysql.b018dd4e.svg",
     "static/media/026-sass.3023657d.svg": "/static/media/026-sass.3023657d.svg",
@@ -20,14 +20,14 @@
     "static/media/030-html-5.15a5a8bd.svg": "/static/media/030-html-5.15a5a8bd.svg",
     "static/media/031-css.55338d57.svg": "/static/media/031-css.55338d57.svg",
     "static/media/032-nodejs.be2df796.svg": "/static/media/032-nodejs.be2df796.svg",
-    "static/media/Resume-Dalbir.pdf": "/static/media/Resume-Dalbir.84727456.pdf",
+    "static/media/Resume-Dalbir.pdf": "/static/media/Resume-Dalbir.b428d86d.pdf",
     "static/media/App.scss": "/static/media/pattern-geometry-2.a46e500d.png",
     "static/media/wordpress.2544dd9e.svg": "/static/media/wordpress.2544dd9e.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e327d292.js",
-    "static/js/2.04b1242e.chunk.js",
-    "static/css/main.62522fcb.chunk.css",
-    "static/js/main.84b75114.chunk.js"
+    "static/js/2.11465765.chunk.js",
+    "static/css/main.c7645b98.chunk.css",
+    "static/js/main.b27fad08.chunk.js"
   ]
 }
