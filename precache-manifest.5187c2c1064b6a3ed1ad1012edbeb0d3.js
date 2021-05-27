@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8941393a2c5b872b3655f0e4662f9b87",
+    "revision": "3d10d5a777cb9382bad81ec128744dc5",
     "url": "/index.html"
   },
   {
-    "revision": "a5b4c56acd548efbe500",
+    "revision": "2e737d66feec016b3fcd",
     "url": "/static/css/main.c7645b98.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.ad88ae65.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a5b4c56acd548efbe500",
-    "url": "/static/js/main.a82968c0.chunk.js"
+    "revision": "2e737d66feec016b3fcd",
+    "url": "/static/js/main.7e8837dd.chunk.js"
   },
   {
     "revision": "b757cbfa5b52942fc711",
@@ -56,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/032-nodejs.be2df796.svg"
   },
   {
-    "revision": "b428d86d6b5995665b730fbaa8ed0ced",
-    "url": "/static/media/Resume-Dalbir.b428d86d.pdf"
+    "revision": "d7d656b62299b625496a4d76924aed46",
+    "url": "/static/media/Resume-Dalbir.d7d656b6.pdf"
   },
   {
     "revision": "a46e500df609ead253c6698da4d16ce1",
