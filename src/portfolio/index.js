@@ -6,11 +6,12 @@ import AboutMe from './about'
 
 import GithubIcon from '../assets/icon-png/github.png';
 import LinkedinIcon from '../assets/icon-png/linkedin.png';
+import ProfilePhoto from '../assets/images/dummy-profile-pic.jpg';
 
 const IndexPage = () => {
 
   const [userData, setUserData] = useState({
-    avatar: '',
+    avatar: ProfilePhoto,
     loc: ''
   });
 
@@ -58,7 +59,7 @@ useEffect(() => {
 
           <div className="user-intro">
             <div className="user-avatar">
-                <img src={userData.avatar} alt="dalbir singh" />
+                <img src={userData.avatar} alt="Dalbir Singh" />
             </div>                 
 
             <ul className="user-social">
@@ -77,7 +78,7 @@ useEffect(() => {
 
             <h1 className="hero-greetings">{greetings()}, My name is Dalbir.</h1>
             {/* <h2 className="hero-intro">.</h2>  */}
-            <h2 className="hero-intro">I am a <span>&lt;</span>FrontEnd <span>&#47;&gt;</span> WEB <span>{"{"}</span>Developer<span>{"}"}</span> living in {userData.loc}, CA.</h2>
+            <h2 className="hero-intro">I am a <span>&lt;</span>WEB<span>&#47;&gt;</span>  <span>{"{"}</span>Developer<span>{"}"}</span> living in {userData.loc}, CA.</h2>
 
             <h1 className="hero-welcome">Welcome to my portfolio!</h1>
           </div>
